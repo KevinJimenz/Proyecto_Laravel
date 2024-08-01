@@ -34,8 +34,6 @@ use ReflectionMethod;
  * allowing us to ask meaningful questions about a specific
  * reflection symbol.
  *
- * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
- *
  * @internal This class is not covered by the backward compatibility promise for PHPUnit
  */
 final class DocBlock

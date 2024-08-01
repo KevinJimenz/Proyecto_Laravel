@@ -19,7 +19,12 @@ class LoginController extends Controller
     */
 
     use AuthenticatesUsers;
-
+    protected function authenticated(Request $request, $user)
+    {
+        // Esto mostrará los datos del usuario autenticado
+        dd($user);
+    }
+    
     /**
      * Where to redirect users after login.
      *

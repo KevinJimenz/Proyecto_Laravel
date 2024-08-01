@@ -8,12 +8,12 @@
         </div>
         <div class="form-group mb-2 mb20">
             <label for="fecha_nacimiento" class="form-label">{{ __('Fecha Nacimiento') }}</label>
-            <input type="text" name="fecha_nacimiento" class="form-control @error('fecha_nacimiento') is-invalid @enderror" value="{{ old('fecha_nacimiento', $prisionero?->fecha_nacimiento) }}" id="fecha_nacimiento" placeholder="Fecha Nacimiento">
+            <input type="date" name="fecha_nacimiento" class="form-control @error('fecha_nacimiento') is-invalid @enderror" value="{{ old('fecha_nacimiento', $prisionero?->fecha_nacimiento) }}" id="fecha_nacimiento" placeholder="Fecha Nacimiento">
             {!! $errors->first('fecha_nacimiento', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
             <label for="fecha_ingreso" class="form-label">{{ __('Fecha Ingreso') }}</label>
-            <input type="text" name="fecha_ingreso" class="form-control @error('fecha_ingreso') is-invalid @enderror" value="{{ old('fecha_ingreso', $prisionero?->fecha_ingreso) }}" id="fecha_ingreso" placeholder="Fecha Ingreso">
+            <input type="date" name="fecha_ingreso" class="form-control @error('fecha_ingreso') is-invalid @enderror" value="{{ old('fecha_ingreso', $prisionero?->fecha_ingreso) }}" id="fecha_ingreso" placeholder="Fecha Ingreso">
             {!! $errors->first('fecha_ingreso', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
@@ -23,12 +23,12 @@
         </div>
         <div class="form-group mb-2 mb20">
             <label for="celda_asignada" class="form-label">{{ __('Celda Asignada') }}</label>
-            <input type="text" name="celda_asignada" class="form-control @error('celda_asignada') is-invalid @enderror" value="{{ old('celda_asignada', $prisionero?->celda_asignada) }}" id="celda_asignada" placeholder="Celda Asignada">
+            <input type="number" name="celda_asignada" class="form-control @error('celda_asignada') is-invalid @enderror" value="{{ old('celda_asignada', $prisionero?->celda_asignada) }}" id="celda_asignada" placeholder="Celda Asignada">
             {!! $errors->first('celda_asignada', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
 
     </div>
     <div class="col-md-12 mt20 mt-2">
-        <button type="submit" class="btn btn-primary">{{ __('Submit') }}</button>
+        <button type="submit" class="btn btn-success">{{ __('Guardar') }}</button>
     </div>
 </div>

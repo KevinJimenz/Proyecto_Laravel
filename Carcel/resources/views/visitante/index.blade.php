@@ -18,7 +18,7 @@
 
                              <div class="float-right">
                                 <a href="{{ route('visitantes.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Crear nuevo') }}
                                 </a>
                               </div>
                         </div>
@@ -31,7 +31,7 @@
 
                     <div class="card-body bg-white">
                         <div class="table-responsive">
-                            <table class="table table-striped table-hover">
+                            <table class="table table-striped table-hover" id="miTabla">
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
@@ -54,11 +54,12 @@
 
                                             <td>
                                                 <form action="{{ route('visitantes.destroy', $visitante->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('visitantes.show', $visitante->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('visitantes.edit', $visitante->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('visitantes.show', $visitante->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Ver') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('visitantes.edit', $visitante->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm" onclick="event.preventDefault(); confirm('Are you sure to delete?') ? this.closest('form').submit() : false;"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm" onclick="event.preventDefault(); confirm('Are you sure to delete?') ? this.closest('form').submit() : false;"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar
+                                                        ') }}</button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -73,3 +74,11 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            $('#miTabla').DataTable();
+        });
+    </script>
+@endpush

@@ -363,8 +363,6 @@ final class MockBuilder
      * @return $this
      *
      * @deprecated https://github.com/sebastianbergmann/phpunit/issues/5309
-     *
-     * @codeCoverageIgnore
      */
     public function disableAutoload(): self
     {
@@ -443,8 +441,6 @@ final class MockBuilder
      * @return $this
      *
      * @deprecated https://github.com/sebastianbergmann/phpunit/issues/5307
-     *
-     * @codeCoverageIgnore
      */
     public function enableProxyingToOriginalMethods(): self
     {
@@ -486,8 +482,6 @@ final class MockBuilder
      * @return $this
      *
      * @deprecated https://github.com/sebastianbergmann/phpunit/issues/5307
-     *
-     * @codeCoverageIgnore
      */
     public function setProxyTarget(object $object): self
     {

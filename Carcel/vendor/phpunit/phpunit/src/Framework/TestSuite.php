@@ -53,8 +53,6 @@ use Throwable;
 /**
  * @template-implements IteratorAggregate<int, Test>
  *
- * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
- *
  * @internal This class is not covered by the backward compatibility promise for PHPUnit
  */
 class TestSuite implements IteratorAggregate, Reorderable, SelfDescribing, Test

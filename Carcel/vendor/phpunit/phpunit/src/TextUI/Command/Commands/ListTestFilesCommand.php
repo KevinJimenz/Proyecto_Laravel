@@ -9,7 +9,6 @@
  */
 namespace PHPUnit\TextUI\Command;
 
-use const PHP_EOL;
 use function array_unique;
 use function assert;
 use function sprintf;
@@ -20,8 +19,6 @@ use ReflectionClass;
 use ReflectionException;
 
 /**
- * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
- *
  * @internal This class is not covered by the backward compatibility promise for PHPUnit
  */
 final readonly class ListTestFilesCommand implements Command
