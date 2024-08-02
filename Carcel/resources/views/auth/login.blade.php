@@ -13,22 +13,22 @@
                             <label for="identificacion" class="col-md-4 col-form-label text-md-end">{{ __('Identificación') }}</label>
                             <div class="col-md-6">
                                 <input id="identificacion" type="identificacion" class="form-control @error('identificacion') is-invalid @enderror" name="identificacion" value="{{ old('identificacion') }}" required autocomplete="identificacion" autofocus>
-                                @error('identificacion')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                                @if ($errors->has('identificacion'))
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $errors->first('identificacion') }}</strong>
+    </span>
+@endif
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                                @if ($errors->has('password'))
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $errors->first('password') }}</strong>
+    </span>
+@endif
                             </div>
                         </div>
                         <div class="row mb-3">

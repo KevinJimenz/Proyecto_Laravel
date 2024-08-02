@@ -22,10 +22,30 @@ use Illuminate\Notifications\Notifiable;
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
 class User extends Authenticatable
-{
+{/**
+     * Determine if the user is an admin.
+     *
+     * @return bool
+     */
+    public function isAdmin()
+    {
+        return $this->rol === 'admin';
+    }
+
+    /**
+     * Determine if the user is a guard.
+     *
+     * @return bool
+     */
+    public function isGuard()
+    {
+        return $this->rol === 'guardia';
+    }
     use Notifiable;
 
     protected $perPage = 20;
+   
+   
 
     /**
      * The attributes that are mass assignable.
