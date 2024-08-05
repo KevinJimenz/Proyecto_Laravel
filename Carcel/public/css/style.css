@@ -88,3 +88,10 @@ main {
     border: black solid 1px;
     transition: all ease-in-out 0.5s;
 }
+.barra_lateral {
+    background: linear-gradient(155deg, red, black, black, black);
+    font-size: 15px;
+}
+.barra_lateral .nav-item .nav-link .reportes{
+    font-size: 15px;
+}
