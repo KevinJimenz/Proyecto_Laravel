@@ -1,50 +1,88 @@
+.barra {
+    background: linear-gradient(145deg, red, black 68%);
+    height: 90px;
+}
 .navbar .container {
     font-size: 20px;
 }
-.navbar .container a {
-    color: black;
+.navbar .container .title {
+    color: white;
+    font-size: 27px;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
-.navbar .container a:hover{
+.navbar .container .boton {
+    color: white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-decoration: none;
+}
+.navbar .container .title:hover {
     color: #dadada;
     transition: all ease-in-out 0.3s;
 }
-/* *  Formulario */
-.login .card .card-header{
-    background-color: #dadada;
-    border: solid 1px #dadada;
-    text-align: center;
-    font-size: 25px;
+.navbar .container .boton:hover {
+    color: #545454;
+    transition: all ease-in-out 0.3s;
 }
-.login .card .card-body{
+main {
+    background: linear-gradient(155deg, red, black, black, black);
+    height: 100vh;
+}
+/* *  Formulario */
+.login .card {
+    border: solid 1px #27272a;
+}
+.login .card .card-header {
+    background-color: #18181b;
+    border: solid 1px #27272a;
+    text-align: center;
+    font-size: 27px;
+    color: white;
+}
+.login .card .card-body {
+    background-color: #0d0d10;
+    border: solid 1px #27272a;
     padding: 30px;
     font-size: 19px;
+
 }
-.login .card .card-body button{
+.login .card .card-body label {
+    color: white;
+}
+.login .card .card-body button {
     font-size: 19px;
     padding: 5px 15px 5px 15px;
 }
-.login .card .card-body button:hover{
+.login .card .card-body button:hover {
     color: black;
     background-color: #ffff;
     border: black solid 1px;
     transition: all ease-in-out 0.5s;
 }
 
-.register .card .card-header{
-    background-color: #dadada;
-    border: solid 1px #dadada;
-    text-align: center;
-    font-size: 25px;
+.register .card {
+    border: solid 1px #27272a;
 }
-.register .card .card-body{
+.register .card .card-header {
+    background-color: #18181b;
+    border: solid 1px #27272a;
+    text-align: center;
+    font-size: 27px;
+    color: white;
+}
+.register .card .card-body {
+    background-color: #0d0d10;
+    border: solid 1px #27272a;
     padding: 30px;
     font-size: 19px;
 }
-.register .card .card-body button{
+.register .card .card-body label {
+    color: white;
+}
+.register .card .card-body button {
     font-size: 19px;
     padding: 5px 15px 5px 15px;
 }
-.register .card .card-body button:hover{
+.register .card .card-body button:hover {
     color: black;
     background-color: #ffff;
     border: black solid 1px;
