@@ -22,23 +22,43 @@
                         
                                 <div class="form-group mb-2 mb20">
                                     <strong>Prisionero Id:</strong>
+                                    @if($visita)
                                     {{ $visita->prisionero_id }}
+                                    @else
+                                    <p>No hay datos disponibles</p>
+                                    @endif
                                 </div>
                                 <div class="form-group mb-2 mb20">
                                     <strong>Visitante Id:</strong>
+                                    @if($visita)
                                     {{ $visita->visitante_id }}
+                                    @else
+                                    <p>No hay datos</p>
+                                    @endif
                                 </div>
                                 <div class="form-group mb-2 mb20">
                                     <strong>Fecha Hora Inicio:</strong>
+                                    @if($visita)
                                     {{ $visita->fecha_hora_inicio }}
+                                    @else
+                                    <p>No hay datos</p>
+                                    @endif
                                 </div>
                                 <div class="form-group mb-2 mb20">
                                     <strong>Fecha Hora Fin:</strong>
+                                    @if($visita)
                                     {{ $visita->fecha_hora_fin }}
+                                    @else
+                                    <p>No hay datos</p>
+                                    @endif
                                 </div>
                                 <div class="form-group mb-2 mb20">
                                     <strong>Guardia Id:</strong>
+                                    @if($visita)
                                     {{ $visita->guardia_id }}
+                                    @else
+                                    <p>No hay datos</p>
+                                    @endif
                                 </div>
 
                     </div>

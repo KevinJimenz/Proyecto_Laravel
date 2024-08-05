@@ -37,6 +37,7 @@ class Visitante extends Model
     public function visitas()
     {
         return $this->hasMany(\App\Models\Visita::class, 'id', 'visitante_id');
+        return $this->hasMany(Visitante::class);
     }
     
 }

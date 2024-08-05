@@ -81,4 +81,5 @@ class VisitaController extends Controller
         return Redirect::route('visitas.index')
             ->with('success', 'Visita deleted successfully');
     }
+
 }

@@ -17,12 +17,15 @@
                             </span>
 
                              <div class="float-right">
+          
                                 <a href="{{ route('visitas.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
                                   {{ __('Crear nuevo') }}
                                 </a>
                               </div>
                         </div>
                     </div>
+                    <!-- Agregar este formulario de búsqueda -->
+
                     @if ($message = Session::get('success'))
                         <div class="alert alert-success m-4">
                             <p>{{ $message }}</p>

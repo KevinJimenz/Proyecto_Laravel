@@ -39,6 +39,7 @@ class Prisionero extends Model
     public function visitas()
     {
         return $this->hasMany(\App\Models\Visita::class, 'id', 'prisionero_id');
+        return $this->hasMany(Visitante::class);
     }
     
 }
